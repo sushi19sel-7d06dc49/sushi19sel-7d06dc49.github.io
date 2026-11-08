@@ -1,0 +1,1698 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>buy1take2寸止-寸止训练节奏_延时控制技巧_新手入门要点</title>
+  <meta name="description" content="buy1take2寸止是面向节奏控制与延迟满足的练习参考，提供寸止训练方法、节奏分级、常见误区与进阶安排，适合想了解buy1take2寸止练习逻辑与操作要点的用户。">
+  <meta name="keywords" content="寸止训练,延时控制,节奏练习,新手入门,进阶安排">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231a1e2b'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23e34f4f' stroke-width='2.5'/%3E%3Cpath d='M16 9v7l4 3' stroke='%23f0b34b' stroke-width='2.2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --bg: #0f1219;
+      --bg-soft: #171c26;
+      --panel: #1d2331;
+      --panel-hover: #232a3a;
+      --border: #2c3446;
+      --text: #e8ebf2;
+      --text-secondary: #a8b0c2;
+      --text-muted: #6f7a90;
+      --primary: #e34f4f;
+      --primary-hover: #f06262;
+      --accent: #f0b34b;
+      --accent-soft: rgba(240, 179, 75, 0.12);
+      --radius-sm: 8px;
+      --radius-md: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 2px 8px rgba(0,0,0,.25);
+      --shadow-md: 0 8px 24px rgba(0,0,0,.35);
+      --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      --container: 1360px;
+      --announce-h: 36px;
+      --header-h: 62px;
+      --sticky-offset: calc(var(--announce-h) + var(--header-h));
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: calc(var(--sticky-offset) + 16px);
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 15px;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img, svg { display: block; max-width: 100%; }
+    ul, ol { list-style: none; }
+
+    /* 吸顶公告条 */
+    .announce-bar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      height: var(--announce-h);
+      background: linear-gradient(90deg, #b83232, #e34f4f 50%, #c94444);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      letter-spacing: .3px;
+      padding: 0 16px;
+      gap: 8px;
+    }
+    .announce-bar .tag {
+      background: rgba(255,255,255,.2);
+      border-radius: 4px;
+      padding: 1px 7px;
+      font-size: 11px;
+      font-weight: 600;
+    }
+
+    /* 吸顶页头 */
+    .site-header {
+      position: sticky;
+      top: var(--announce-h);
+      z-index: 99;
+      height: var(--header-h);
+      background: rgba(15,18,25,.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .header-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 24px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .brand-logo {
+      width: 34px;
+      height: 34px;
+      flex-shrink: 0;
+    }
+    .brand-text {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: .5px;
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .brand-text em {
+      color: var(--primary);
+      font-style: normal;
+    }
+    .header-nav {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .header-nav::-webkit-scrollbar { display: none; }
+    .header-nav a {
+      padding: 6px 13px;
+      border-radius: 6px;
+      font-size: 14px;
+      color: var(--text-secondary);
+      white-space: nowrap;
+      transition: background .2s, color .2s;
+    }
+    .header-nav a:hover {
+      background: var(--panel);
+      color: var(--text);
+    }
+    .header-actions {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-shrink: 0;
+    }
+    .search-mini {
+      display: flex;
+      align-items: center;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 0 4px 0 10px;
+      height: 34px;
+      transition: border-color .2s;
+    }
+    .search-mini:focus-within { border-color: var(--primary); }
+    .search-mini input {
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text);
+      font-size: 13px;
+      width: 130px;
+      font-family: inherit;
+    }
+    .search-mini input::placeholder { color: var(--text-muted); }
+    .search-mini button {
+      background: var(--primary);
+      border: none;
+      color: #fff;
+      border-radius: 6px;
+      padding: 4px 10px;
+      font-size: 12px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: background .2s;
+    }
+    .search-mini button:hover { background: var(--primary-hover); }
+
+    /* 首屏 */
+    .hero {
+      background: radial-gradient(ellipse at 70% 20%, rgba(227,79,79,.12), transparent 55%),
+                  radial-gradient(ellipse at 20% 80%, rgba(240,179,75,.07), transparent 50%),
+                  var(--bg-soft);
+      border-bottom: 1px solid var(--border);
+      padding: 52px 24px 48px;
+    }
+    .hero-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 48px;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: var(--accent);
+      background: var(--accent-soft);
+      border: 1px solid rgba(240,179,75,.25);
+      border-radius: 20px;
+      padding: 3px 12px;
+      margin-bottom: 16px;
+      letter-spacing: .5px;
+    }
+    .hero-badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+    .hero h1 {
+      font-size: clamp(30px, 4.5vw, 46px);
+      line-height: 1.2;
+      font-weight: 800;
+      letter-spacing: .5px;
+      margin-bottom: 16px;
+    }
+    .hero h1 .hl {
+      color: var(--primary);
+      position: relative;
+    }
+    .hero-desc {
+      font-size: 15px;
+      color: var(--text-secondary);
+      max-width: 560px;
+      margin-bottom: 26px;
+      line-height: 1.8;
+    }
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 28px;
+    }
+    .hero-tags span {
+      font-size: 12px;
+      padding: 4px 12px;
+      border-radius: 6px;
+      background: var(--panel);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+    }
+    .hero-cta {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: var(--primary);
+      color: #fff;
+      padding: 11px 26px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background .2s, transform .15s;
+    }
+    .btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); }
+    .btn-ghost {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      padding: 11px 22px;
+      border-radius: 8px;
+      font-size: 14px;
+      transition: border-color .2s, color .2s;
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    .hero-visual {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-visual svg {
+      width: 100%;
+      max-width: 360px;
+      height: auto;
+      filter: drop-shadow(0 12px 32px rgba(227,79,79,.15));
+    }
+
+    /* 三栏主内容 */
+    .main-wrapper {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 32px 24px 0;
+      display: grid;
+      grid-template-columns: 178px minmax(0, 1fr) 248px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    /* 左栏 */
+    .left-sidebar {
+      position: sticky;
+      top: calc(var(--sticky-offset) + 16px);
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+    .side-block {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+    }
+    .side-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .channel-nav {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+    .channel-nav a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 7px 8px;
+      border-radius: 6px;
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      transition: background .2s, color .2s;
+    }
+    .channel-nav a:hover { background: var(--panel-hover); color: var(--text); }
+    .channel-nav a .dot {
+      width: 5px; height: 5px;
+      border-radius: 50%;
+      background: var(--primary);
+      flex-shrink: 0;
+    }
+    .filter-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .filter-tags button {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 12px;
+      padding: 4px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all .2s;
+    }
+    .filter-tags button:hover,
+    .filter-tags button.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    /* 中栏 */
+    .center-col {
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .section-card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 26px 28px;
+      box-shadow: var(--shadow-sm);
+    }
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 18px;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .section-head h2 {
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: .3px;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+    }
+    .section-head h2::before {
+      content: '';
+      width: 4px;
+      height: 18px;
+      background: var(--primary);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .section-head .more {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      transition: color .2s;
+    }
+    .section-head .more:hover { color: var(--accent); }
+
+    .intro-text p {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      line-height: 1.85;
+    }
+    .intro-text p:last-child { margin-bottom: 0; }
+    .intro-text strong { color: var(--accent); font-weight: 600; }
+
+    /* 热门内容卡片 */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+    }
+    .content-card {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 16px;
+      transition: border-color .2s, transform .15s;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .content-card:hover { border-color: rgba(227,79,79,.4); transform: translateY(-2px); }
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .card-type {
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .card-heat {
+      font-size: 11.5px;
+      color: var(--text-muted);
+    }
+    .content-card h3 {
+      font-size: 14.5px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: var(--text);
+    }
+    .card-desc {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 5px;
+      margin-top: 2px;
+    }
+    .card-tags span {
+      font-size: 11px;
+      color: var(--text-muted);
+      background: var(--panel);
+      padding: 1px 7px;
+      border-radius: 4px;
+      border: 1px solid var(--border);
+    }
+
+    /* 最新更新列表 */
+    .update-list {
+      display: flex;
+      flex-direction: column;
+    }
+    .update-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px dashed var(--border);
+    }
+    .update-item:last-child { border-bottom: none; }
+    .update-num {
+      width: 22px;
+      height: 22px;
+      border-radius: 5px;
+      background: var(--bg-soft);
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .update-item:nth-child(-n+3) .update-num {
+      background: var(--primary);
+      color: #fff;
+    }
+    .update-body { min-width: 0; }
+    .update-body .title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+    .update-body .title:hover { color: var(--accent); }
+    .update-body .brief {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.55;
+    }
+
+    /* 分类入口 */
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .category-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+      padding: 16px 8px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      text-align: center;
+      transition: border-color .2s, background .2s;
+    }
+    .category-item:hover {
+      border-color: var(--primary);
+      background: var(--panel-hover);
+    }
+    .category-item .cat-icon {
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+    .category-item .cat-name {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+
+    /* 深度解析 */
+    .deep-dive h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 22px 0 10px;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 7px;
+    }
+    .deep-dive h3:first-of-type { margin-top: 0; }
+    .deep-dive h3::before {
+      content: '§';
+      color: var(--primary);
+      font-size: 15px;
+    }
+    .deep-dive p {
+      font-size: 14.5px;
+      color: var(--text-secondary);
+      line-height: 1.85;
+      margin-bottom: 10px;
+    }
+    .deep-dive ul {
+      margin: 8px 0 14px 4px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .deep-dive ul li {
+      font-size: 14px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      padding-left: 18px;
+      position: relative;
+    }
+    .deep-dive ul li::before {
+      content: '▸';
+      position: absolute;
+      left: 0;
+      color: var(--primary);
+      font-size: 12px;
+      top: 3px;
+    }
+
+    /* 体验指南 */
+    .guide-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .guide-step {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 13px 15px;
+      background: var(--bg-soft);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--primary);
+    }
+    .guide-step .step-index {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .guide-step .step-body .step-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+    .guide-step .step-body .step-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* FAQ */
+    .faq-list { display: flex; flex-direction: column; }
+    .faq-list details {
+      border-bottom: 1px solid var(--border);
+      padding: 2px 0;
+    }
+    .faq-list details:last-child { border-bottom: none; }
+    .faq-list summary {
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 13px 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--text);
+      transition: color .2s;
+    }
+    .faq-list summary:hover { color: var(--accent); }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after {
+      content: '+';
+      font-size: 18px;
+      color: var(--text-muted);
+      flex-shrink: 0;
+      transition: transform .2s;
+    }
+    .faq-list details[open] summary::after {
+      content: '−';
+      color: var(--primary);
+    }
+    .faq-list details p {
+      font-size: 13.5px;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      padding: 0 0 14px;
+      max-width: 96%;
+    }
+
+    /* 用户评论 */
+    .comment-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+    .comment-item {
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 13px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+    .comment-head {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .comment-avatar {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 11px;
+      font-weight: 700;
+      color: #fff;
+      flex-shrink: 0;
+    }
+    .comment-name {
+      font-size: 12.5px;
+      font-weight: 600;
+      color: var(--text-secondary);
+    }
+    .comment-text {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* 相关资讯 */
+    .news-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .news-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding-bottom: 14px;
+      border-bottom: 1px dashed var(--border);
+    }
+    .news-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .news-date {
+      font-size: 11.5px;
+      color: var(--text-muted);
+      background: var(--bg-soft);
+      padding: 3px 9px;
+      border-radius: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .news-body .news-title {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+    .news-body .news-title:hover { color: var(--accent); }
+    .news-body .news-brief {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* 相关推荐标签 */
+    .rec-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .rec-tags a {
+      font-size: 13px;
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: var(--bg-soft);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      transition: all .2s;
+    }
+    .rec-tags a:hover {
+      border-color: var(--primary);
+      color: var(--primary);
+      background: rgba(227,79,79,.06);
+    }
+
+    /* 趋势观察 */
+    .trend-panel {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .trend-box {
+      background: var(--bg-soft);
+      border-radius: var(--radius-sm);
+      padding: 16px;
+      border: 1px solid var(--border);
+    }
+    .trend-box h4 {
+      font-size: 13.5px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--accent);
+    }
+    .trend-box p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* 右栏 */
+    .right-sidebar {
+      position: sticky;
+      top: calc(var(--sticky-offset) + 16px);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .toc-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+    .toc-list a {
+      font-size: 13px;
+      color: var(--text-muted);
+      padding: 6px 8px;
+      border-radius: 5px;
+      border-left: 2px solid transparent;
+      transition: all .2s;
+    }
+    .toc-list a:hover {
+      color: var(--text);
+      background: var(--panel-hover);
+      border-left-color: var(--primary);
+    }
+    .hot-list {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+    .hot-list a {
+      display: flex;
+      align-items: flex-start;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-secondary);
+      padding: 6px 6px;
+      border-radius: 5px;
+      transition: background .2s;
+      line-height: 1.45;
+    }
+    .hot-list a:hover { background: var(--panel-hover); }
+    .hot-list .rank {
+      font-size: 11px;
+      font-weight: 700;
+      color: var(--text-muted);
+      width: 16px;
+      flex-shrink: 0;
+      margin-top: 1px;
+    }
+    .hot-list a:nth-child(-n+2) .rank { color: var(--primary); }
+
+    .extend-item {
+      display: block;
+      font-size: 13px;
+      color: var(--text-secondary);
+      padding: 7px 0;
+      border-bottom: 1px dashed var(--border);
+      transition: color .2s;
+    }
+    .extend-item:last-child { border-bottom: none; }
+    .extend-item:hover { color: var(--accent); }
+
+    /* 页尾 */
+    .site-footer {
+      margin-top: 48px;
+      border-top: 1px solid var(--border);
+      background: var(--bg-soft);
+      padding: 40px 24px 28px;
+    }
+    .footer-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 32px;
+    }
+    .footer-brand .brand-text { font-size: 18px; margin-bottom: 10px; }
+    .footer-brand p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      max-width: 280px;
+    }
+    .footer-col h4 {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      margin-bottom: 12px;
+      letter-spacing: .5px;
+    }
+    .footer-col a {
+      display: block;
+      font-size: 12.5px;
+      color: var(--text-muted);
+      padding: 4px 0;
+      transition: color .2s;
+    }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-bottom {
+      max-width: var(--container);
+      margin: 28px auto 0;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* 搜索无结果提示 */
+    .no-result-tip {
+      display: none;
+      font-size: 13.5px;
+      color: var(--text-muted);
+      padding: 18px 0;
+      text-align: center;
+    }
+    .no-result-tip.show { display: block; }
+
+    /* 响应式 */
+    @media (max-width: 1100px) {
+      .main-wrapper { grid-template-columns: 160px minmax(0, 1fr); }
+      .right-sidebar { display: none; }
+      .hero-inner { grid-template-columns: 1fr 300px; gap: 30px; }
+      .footer-inner { grid-template-columns: 1.5fr 1fr 1fr; }
+    }
+    @media (max-width: 860px) {
+      .main-wrapper { grid-template-columns: 1fr; }
+      .left-sidebar {
+        position: static;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .left-sidebar .side-block { flex: 1 1 200px; }
+      .hero-inner { grid-template-columns: 1fr; }
+      .hero-visual { display: none; }
+      .card-grid { grid-template-columns: 1fr; }
+      .comment-grid { grid-template-columns: 1fr; }
+      .category-grid { grid-template-columns: repeat(2, 1fr); }
+      .trend-panel { grid-template-columns: 1fr; }
+      .footer-inner { grid-template-columns: 1fr 1fr; }
+      .header-nav { display: none; }
+      .search-mini input { width: 90px; }
+    }
+    @media (max-width: 560px) {
+      .hero { padding: 32px 16px 30px; }
+      .main-wrapper { padding: 20px 14px 0; }
+      .section-card { padding: 18px 16px; }
+      .header-inner { padding: 0 14px; gap: 14px; }
+      .brand-text { font-size: 17px; }
+      .search-mini { display: none; }
+      .footer-inner { grid-template-columns: 1fr; gap: 20px; }
+      .announce-bar { font-size: 11.5px; gap: 6px; }
+      .announce-bar .tag { font-size: 10px; padding: 1px 5px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 吸顶公告条 -->
+  <div class="announce-bar" role="banner">
+    <span class="tag">更新</span>
+    <span>buy1take2寸止节奏训练分级指南已上线，新增进阶控时模块与误区对照表</span>
+  </div>
+
+  <!-- 吸顶页头 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="/#" class="brand" aria-label="buy1take2寸止首页">
+        <svg class="brand-logo" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#1d2331"/>
+          <circle cx="16" cy="16" r="7.5" stroke="#e34f4f" stroke-width="2.2"/>
+          <path d="M16 8.5v7.5l4.2 3.2" stroke="#f0b34b" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-text">buy1take2<em>寸止</em></span>
+      </a>
+      <nav class="header-nav" aria-label="主题导航">
+        <a href="/#intro">入门简介</a>
+        <a href="/#hot">热门推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#category">分类入口</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#comments">用户评论</a>
+      </nav>
+      <div class="header-actions">
+        <div class="search-mini" role="search">
+          <input type="search" id="siteSearch" placeholder="搜索寸止内容…" aria-label="搜索寸止内容">
+          <button type="button" id="searchBtn" aria-label="执行搜索">搜索</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="hero-badge">节奏控制 · 延迟满足 · 分级练习</span>
+        <h1>buy1take2寸止</h1>
+        <p class="hero-desc">
+          围绕寸止训练中的节奏感知、时间管理与分级进阶展开，提供从入门到进阶的练习参考、常见误区对照以及内容消费指引，帮助理解寸止练习的实际操作逻辑。
+        </p>
+        <div class="hero-tags">
+          <span>寸止训练节奏</span>
+          <span>延时控制技巧</span>
+          <span>新手入门要点</span>
+          <span>进阶安排</span>
+          <span>误区对照</span>
+        </div>
+        <div class="hero-cta">
+          <a href="/#hot" class="btn-primary">查看热门内容 →</a>
+          <a href="/#deep" class="btn-ghost">深度解析</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 340 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#e34f4f"/>
+              <stop offset="100%" stop-color="#f0b34b"/>
+            </linearGradient>
+            <radialGradient id="g2" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#e34f4f" stop-opacity="0.18"/>
+              <stop offset="100%" stop-color="#e34f4f" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="170" cy="160" r="140" fill="url(#g2)"/>
+          <!-- 外圈刻度 -->
+          <circle cx="170" cy="160" r="108" stroke="#2c3446" stroke-width="1.5" stroke-dasharray="3 7"/>
+          <circle cx="170" cy="160" r="88" stroke="#2c3446" stroke-width="1"/>
+          <!-- 进度弧 -->
+          <path d="M170 72 A88 88 0 0 1 258 160" stroke="url(#g1)" stroke-width="5" stroke-linecap="round" fill="none"/>
+          <path d="M170 248 A88 88 0 0 1 82 160" stroke="#f0b34b" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.4"/>
+          <!-- 中心 -->
+          <circle cx="170" cy="160" r="46" fill="#171c26" stroke="#2c3446" stroke-width="1.5"/>
+          <text x="170" y="152" text-anchor="middle" fill="#e8ebf2" font-size="11" font-family="sans-serif" letter-spacing="1">节奏控制</text>
+          <text x="170" y="176" text-anchor="middle" fill="#e34f4f" font-size="20" font-weight="bold" font-family="sans-serif">寸止</text>
+          <!-- 指针 -->
+          <line x1="170" y1="160" x2="170" y2="92" stroke="#f0b34b" stroke-width="2.5" stroke-linecap="round"/>
+          <circle cx="170" cy="160" r="5" fill="#f0b34b"/>
+          <!-- 标签 -->
+          <rect x="236" y="96" width="70" height="22" rx="11" fill="#1d2331" stroke="#2c3446" stroke-width="1"/>
+          <text x="271" y="111" text-anchor="middle" fill="#a8b0c2" font-size="10" font-family="sans-serif">时间感知</text>
+          <rect x="34" y="196" width="70" height="22" rx="11" fill="#1d2331" stroke="#2c3446" stroke-width="1"/>
+          <text x="69" y="211" text-anchor="middle" fill="#a8b0c2" font-size="10" font-family="sans-serif">分级进阶</text>
+          <rect x="236" y="200" width="70" height="22" rx="11" fill="#1d2331" stroke="#2c3446" stroke-width="1"/>
+          <text x="271" y="215" text-anchor="middle" fill="#a8b0c2" font-size="10" font-family="sans-serif">呼吸配合</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三栏主内容区 -->
+  <div class="main-wrapper">
+
+    <!-- 左栏 -->
+    <aside class="left-sidebar" aria-label="频道与筛选">
+      <div class="side-block">
+        <div class="side-title">频道导航</div>
+        <nav class="channel-nav" aria-label="左栏频道">
+          <a href="/#intro"><span class="dot"></span>入门简介</a>
+          <a href="/#hot"><span class="dot"></span>热门推荐</a>
+          <a href="/#latest"><span class="dot"></span>最新更新</a>
+          <a href="/#category"><span class="dot"></span>分类入口</a>
+          <a href="/#deep"><span class="dot"></span>深度解析</a>
+          <a href="/#guide"><span class="dot"></span>体验指南</a>
+          <a href="/#faq"><span class="dot"></span>常见问答</a>
+          <a href="/#comments"><span class="dot"></span>用户评论</a>
+          <a href="/#news"><span class="dot"></span>相关资讯</a>
+          <a href="/#rec"><span class="dot"></span>相关推荐</a>
+        </nav>
+      </div>
+      <div class="side-block">
+        <div class="side-title">分类筛选</div>
+        <div class="filter-tags" id="filterTags" role="group" aria-label="按内容类型筛选">
+          <button type="button" class="active" data-filter="all">全部</button>
+          <button type="button" data-filter="train">训练方法</button>
+          <button type="button" data-filter="rhythm">节奏分级</button>
+          <button type="button" data-filter="mind">心理调节</button>
+          <button type="button" data-filter="mistake">误区对照</button>
+          <button type="button" data-filter="plan">进阶安排</button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 中栏 -->
+    <main class="center-col" id="main-content">
+
+      <!-- 1. 内容简介 -->
+      <section class="section-card" id="intro">
+        <div class="section-head">
+          <h2>关于buy1take2寸止的练习认知</h2>
+        </div>
+        <div class="intro-text">
+          <p><strong>buy1take2寸止</strong>是一套围绕节奏控制与延迟满足展开的练习框架，强调在有限时间内感知身体与心理的反馈信号，并通过分阶段安排逐步提升控制能力。与单纯“忍耐”不同，寸止练习更关注节奏识别、呼吸配合与恢复间隔的合理设计，让每一次练习都有可参照的时间刻度与强度分级。</p>
+          <p>在实际操作中，寸止训练通常从短周期、低强度的节奏感知开始，逐步过渡到多段控时与情境模拟。入门阶段的核心是建立稳定的时间感知，例如用秒表记录每个阶段的实际用时与主观感受，再对照分级表判断是否适合进入下一档。进阶阶段则更强调节奏变化中的自我调节，包括呼吸节律、注意力转移以及恢复期的主动放松。</p>
+          <p>对于刚接触寸止练习的用户，建议优先了解“基础节奏分级”与“常见误区对照”两个方向。前者帮助建立合理的预期，后者避免因节奏误判导致练习体验下降。本文整理的内容覆盖训练方法、节奏分级、心理调节、误区对照与进阶安排五个维度，适合希望系统了解寸止练习逻辑、寻找可执行参考的读者。页面中的示例数据仅用于展示内容结构，不构成专业建议。</p>
+        </div>
+      </section>
+
+      <!-- 2. 热门内容推荐 -->
+      <section class="section-card" id="hot">
+        <div class="section-head">
+          <h2>寸止训练热门内容推荐</h2>
+          <a href="/#latest" class="more">查看最新 →</a>
+        </div>
+        <div class="card-grid" id="hotCards">
+          <article class="content-card" data-category="train">
+            <div class="card-top">
+              <span class="card-type">训练方法</span>
+              <span class="card-heat">热度 9.2</span>
+            </div>
+            <h3>寸止基础节奏分级：从30秒到3分钟</h3>
+            <p class="card-desc">按时间梯度拆解入门节奏，给出每个档位的适用人群与观察指标。</p>
+            <div class="card-tags"><span>新手入门</span><span>节奏分级</span><span>时间感知</span></div>
+          </article>
+          <article class="content-card" data-category="rhythm">
+            <div class="card-top">
+              <span class="card-type">节奏分级</span>
+              <span class="card-heat">热度 8.7</span>
+            </div>
+            <h3>寸止进阶控时表：多段节奏的衔接要点</h3>
+            <p class="card-desc">讲解多段控时之间的过渡方式，以及恢复间隔的设定原则。</p>
+            <div class="card-tags"><span>进阶安排</span><span>多段控时</span><span>恢复间隔</span></div>
+          </article>
+          <article class="content-card" data-category="mind">
+            <div class="card-top">
+              <span class="card-type">心理调节</span>
+              <span class="card-heat">热度 8.5</span>
+            </div>
+            <h3>寸止练习中的呼吸配合与注意力转移</h3>
+            <p class="card-desc">呼吸节律如何影响节奏感知，注意力转移的三种常用方式。</p>
+            <div class="card-tags"><span>呼吸配合</span><span>注意力转移</span><span>心理调节</span></div>
+          </article>
+          <article class="content-card" data-category="mistake">
+            <div class="card-top">
+              <span class="card-type">误区对照</span>
+              <span class="card-heat">热度 8.3</span>
+            </div>
+            <h3>寸止常见误区对照表：过度追求时长不可取</h3>
+            <p class="card-desc">整理练习中高频出现的认知偏差，并给出调整方向与替代做法。</p>
+            <div class="card-tags"><span>误区对照</span><span>练习节奏</span><span>调整方向</span></div>
+          </article>
+          <article class="content-card" data-category="plan">
+            <div class="card-top">
+              <span class="card-type">进阶安排</span>
+              <span class="card-heat">热度 8.0</span>
+            </div>
+            <h3>四周寸止练习安排：从短周期到多段控时</h3>
+            <p class="card-desc">以周为单位规划练习强度，说明每周侧重点与休息日分配。</p>
+            <div class="card-tags"><span>四周计划</span><span>强度分配</span><span>进阶安排</span></div>
+          </article>
+          <article class="content-card" data-category="train">
+            <div class="card-top">
+              <span class="card-type">训练方法</span>
+              <span class="card-heat">热度 7.8</span>
+            </div>
+            <h3>寸止记录表怎么填：时间、感受与恢复三项</h3>
+            <p class="card-desc">介绍练习记录的三项核心字段，以及如何用记录调整节奏。</p>
+            <div class="card-tags"><span>练习记录</span><span>节奏调整</span><span>训练方法</span></div>
+          </article>
+        </div>
+        <p class="no-result-tip" id="noResultTip">没有找到匹配的内容，试试切换筛选条件或搜索其他关键词。</p>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="section-card" id="latest">
+        <div class="section-head">
+          <h2>寸止练习最新更新动态</h2>
+        </div>
+        <div class="update-list">
+          <div class="update-item">
+            <span class="update-num">1</span>
+            <div class="update-body">
+              <a href="/#hot" class="title">寸止节奏分级表新增“微控档”说明</a>
+              <p class="brief">补充30秒至60秒区间的微调节奏要点，适合入门两周后的过渡练习。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-num">2</span>
+            <div class="update-body">
+              <a href="/#deep" class="title">延时控制中的呼吸配合方式整理</a>
+              <p class="brief">归纳腹式呼吸与节奏锚点结合的操作步骤，附常见错误提示。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-num">3</span>
+            <div class="update-body">
+              <a href="/#category" class="title">新手入门要点页面完成结构调整</a>
+              <p class="brief">按“时间感知—节奏分级—恢复间隔”重排内容顺序，便于对照阅读。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-num">4</span>
+            <div class="update-body">
+              <a href="/#deep" class="title">进阶安排新增四周练习对照示例</a>
+              <p class="brief">以周为单位展示强度变化曲线，说明休息日与练习日的交替逻辑。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-num">5</span>
+            <div class="update-body">
+              <a href="/#faq" class="title">误区对照问答补充“时长焦虑”话题</a>
+              <p class="brief">针对过度关注单次时长的常见现象，给出更合理的观察维度。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-num">6</span>
+            <div class="update-body">
+              <a href="/#hot" class="title">寸止训练记录表模板字段优化</a>
+              <p class="brief">增加“恢复感受”与“注意力状态”两项，便于回溯节奏调整效果。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-num">7</span>
+            <div class="update-body">
+              <a href="/#deep" class="title">多段控时衔接要点补充情境说明</a>
+              <p class="brief">用三个具体场景说明节奏切换时的注意力分配方式。</p>
+            </div>
+          </div>
+          <div class="update-item">
+            <span class="update-num">8</span>
+            <div class="update-body">
+              <a href="/#news" class="title">近期寸止练习讨论方向汇总</a>
+              <p class="brief">整理社区中关于节奏感知与恢复间隔的讨论要点，供参考对照。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section-card" id="category">
+        <div class="section-head">
+          <h2>寸止内容分类入口</h2>
+        </div>
+        <div class="category-grid">
+          <a href="/#deep" class="category-item">
+            <span class="cat-icon">⏱</span>
+            <span class="cat-name">寸止训练方法</span>
+          </a>
+          <a href="/#deep" class="category-item">
+            <span class="cat-icon">📶</span>
+            <span class="cat-name">节奏分级</span>
+          </a>
+          <a href="/#deep" class="category-item">
+            <span class="cat-icon">🧠</span>
+            <span class="cat-name">心理调节</span>
+          </a>
+          <a href="/#faq" class="category-item">
+            <span class="cat-icon">⚠️</span>
+            <span class="cat-name">误区对照</span>
+          </a>
+          <a href="/#guide" class="category-item">
+            <span class="cat-icon">📅</span>
+            <span class="cat-name">进阶安排</span>
+          </a>
+          <a href="/#intro" class="category-item">
+            <span class="cat-icon">🌱</span>
+            <span class="cat-name">新手入门</span>
+          </a>
+          <a href="/#latest" class="category-item">
+            <span class="cat-icon">🫁</span>
+            <span class="cat-name">呼吸配合</span>
+          </a>
+          <a href="/#hot" class="category-item">
+            <span class="cat-icon">📝</span>
+            <span class="cat-name">练习记录</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析正文 -->
+      <section class="section-card deep-dive" id="deep">
+        <div class="section-head">
+          <h2>buy1take2寸止深度解析：节奏、分级与恢复</h2>
+        </div>
+        <p>寸止练习的核心并不在于单次坚持了多长时间，而在于能否在练习过程中保持对节奏的清晰感知，并根据反馈及时调整。理解这一点之后，buy1take2寸止的练习框架会更容易落地：它把一次完整的练习拆成若干个可观察的小阶段，每个阶段都有对应的强度参考与恢复要求。下面从节奏感知、分级逻辑与恢复安排三个方面展开说明。</p>
+
+        <h3>节奏感知：用时间刻度替代模糊感受</h3>
+        <p>入门阶段最常见的问题是“凭感觉”判断节奏，导致练习强度忽高忽低。更稳妥的做法是引入外部时间刻度，例如用秒表或手机计时器记录每个小段的实际用时，并在练习结束后用一句话描述当时的感受。连续记录三到五次后，就能看出自己稳定的节奏区间在哪里。</p>
+        <ul>
+          <li>单段时长从30秒开始，逐步增加到60秒、90秒，每次只调整一个变量。</li>
+          <li>记录三项核心信息：实际用时、主观强度、恢复所需时间。</li>
+          <li>同一档位连续三次表现稳定后，再考虑进入下一档。</li>
+        </ul>
+
+        <h3>分级逻辑：为什么寸止需要分档练习</h3>
+        <p>buy1take2寸止的练习框架把节奏分成若干档位，并不是为了制造难度阶梯，而是为了让练习者有一个可回退的参照系。当某一档位出现明显不适或节奏紊乱时，可以退回上一档重新建立稳定感。分级同时也有助于避免“跳级练习”带来的挫败感，让进步曲线更平滑。</p>
+        <p>常见的分级维度包括单段时长、段间恢复时间、总段数以及注意力要求。入门阶段建议只调整单段时长这一个维度，其余保持不变；进入进阶阶段后，再逐步引入多段组合与情境模拟。每一档的停留时间因人而异，不必强求与示例表完全一致。</p>
+
+        <h3>恢复安排：被低估的练习组成部分</h3>
+        <p>恢复间隔的设定往往比练习本身更容易被忽略。合理的恢复安排能让下一次练习保持在相近的节奏水平，而不是一次比一次吃力。通常建议段间恢复时间不少于单段时长的二分之一，具体数值可以根据主观感受微调。如果连续两次练习后恢复时间明显拉长，说明当前强度可能偏高，应考虑退回上一档。</p>
+        <ul>
+          <li>恢复期内以缓慢呼吸和轻度拉伸为主，避免继续高强度活动。</li>
+          <li>每周保留一到两天完全休息日，不安排任何节奏练习。</li>
+          <li>用练习记录表追踪恢复时间的变化趋势，比单次感受更可靠。</li>
+        </ul>
+        <p>把节奏感知、分级逻辑与恢复安排三者结合起来，buy1take2寸止的练习会逐渐形成一套适合自己的节奏系统。示例数据与分级表仅用于说明结构，实际练习请根据自身状态灵活调整，不追求与他人一致的时间数字。</p>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="section-card" id="guide">
+        <div class="section-head">
+          <h2>寸止练习体验指南</h2>
+        </div>
+        <div class="guide-steps">
+          <div class="guide-step">
+            <span class="step-index">1</span>
+            <div class="step-body">
+              <div class="step-title">从基础节奏分级开始</div>
+              <p class="step-desc">先在入门档位停留三到五次练习，建立稳定的时间感知，再考虑调整强度。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <span class="step-index">2</span>
+            <div class="step-body">
+              <div class="step-title">用记录表追踪变化</div>
+              <p class="step-desc">每次练习后填写用时、感受与恢复时间三项，连续记录比单次感受更有参考价值。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <span class="step-index">3</span>
+            <div class="step-body">
+              <div class="step-title">按分类筛选查找内容</div>
+              <p class="step-desc">左栏分类筛选可按训练方法、节奏分级、误区对照等方向缩小范围，快速定位需要的内容。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <span class="step-index">4</span>
+            <div class="step-body">
+              <div class="step-title">结合常见问答排查问题</div>
+              <p class="step-desc">遇到节奏紊乱或恢复变慢时，先查看误区对照与常见问答，再决定是否调整练习安排。</p>
+            </div>
+          </div>
+          <div class="guide-step">
+            <span class="step-index">5</span>
+            <div class="step-body">
+              <div class="step-title">移动端与桌面端阅读</div>
+              <p class="step-desc">页面在手机端自动合并侧栏，正文保持单列阅读宽度，频道入口转为横向导航，方便随时查看。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section-card" id="faq">
+        <div class="section-head">
+          <h2>寸止练习常见问答</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>buy1take2寸止适合完全没有基础的人吗？</summary>
+            <p>适合。入门档位从30秒左右的短周期开始，重点在于建立时间感知，而不是追求时长。建议先用三到五次练习熟悉记录方式，再考虑是否进入下一档。</p>
+          </details>
+          <details>
+            <summary>寸止训练一般多久更新一次分级表？</summary>
+            <p>分级表本身是参考框架，不需要频繁更新。练习者更适合根据自身记录每隔两到四周回顾一次，判断是否需要调整当前档位，而不是等待外部更新。</p>
+          </details>
+          <details>
+            <summary>寸止练习和延时控制有什么区别？</summary>
+            <p>延时控制更关注单次时长的延长，寸止练习则强调节奏感知与恢复安排的完整循环。两者有交集，但寸止更看重过程记录与分档调整，而不是单纯追求更长的数字。</p>
+          </details>
+          <details>
+            <summary>练习记录表必须每次都填吗？</summary>
+            <p>建议至少连续填写三到五次，这样才有足够的参照信息。稳定之后可以降低频率，但在调整档位或改变练习安排时，仍建议恢复记录一段时间。</p>
+          </details>
+          <details>
+            <summary>寸止练习中呼吸配合应该怎么做？</summary>
+            <p>以缓慢、均匀的腹式呼吸为主，把注意力放在呼吸节律上，而不是刻意憋气。如果出现呼吸急促或节奏紊乱，应先暂停并回到更短的档位。</p>
+          </details>
+          <details>
+            <summary>多段控时衔接时总感觉节奏被打乱怎么办？</summary>
+            <p>先减少段数或延长恢复间隔，让衔接过程更从容。衔接阶段可以用固定的呼吸次数作为锚点，帮助注意力平稳过渡，避免仓促进入下一段。</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section-card" id="comments">
+        <div class="section-head">
+          <h2>用户评论与练习反馈</h2>
+        </div>
+        <div class="comment-grid">
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">林</span><span class="comment-name">林间慢步</span></div>
+            <p class="comment-text">记录表确实比凭感觉靠谱，第三次练习时才发现自己一直高估了恢复速度。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">阿</span><span class="comment-name">阿泽不熬夜</span></div>
+            <p class="comment-text">分级表对新手很友好，至少知道先练哪一档，不会一上来就乱来。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">小</span><span class="comment-name">小满慢慢来</span></div>
+            <p class="comment-text">呼吸配合那部分讲得挺具体，不是空话，照着做确实能稳一些。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">陈</span><span class="comment-name">陈默练习中</span></div>
+            <p class="comment-text">多段控时还是有点难，衔接的时候容易急，打算先退回去练单段。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">月</span><span class="comment-name">月见草</span></div>
+            <p class="comment-text">误区对照那篇挺有用，之前确实太在意单次时长了，现在更关注恢复感受。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">大</span><span class="comment-name">大橙子</span></div>
+            <p class="comment-text">分类筛选找内容很方便，直接点误区对照就能看到需要注意的地方。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">周</span><span class="comment-name">周末慢跑者</span></div>
+            <p class="comment-text">内容比较克制，没有夸张说法，适合当参考框架自己慢慢调。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">一</span><span class="comment-name">一只小刻度</span></div>
+            <p class="comment-text">四周安排正在试，每周强度变化不大，比较容易坚持下来。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">南</span><span class="comment-name">南风知我意</span></div>
+            <p class="comment-text">节奏感知这部分讲得清楚，用秒表记录之后确实能看出自己的波动区间。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">豆</span><span class="comment-name">豆豆龙</span></div>
+            <p class="comment-text">希望后面能多一些具体场景的衔接示例，现在只能自己摸索。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">清</span><span class="comment-name">清风徐来</span></div>
+            <p class="comment-text">中立地说，部分档位描述还是偏抽象，需要自己多练几次才能对上号。</p>
+          </div>
+          <div class="comment-item">
+            <div class="comment-head"><span class="comment-avatar">木</span><span class="comment-name">木木夕</span></div>
+            <p class="comment-text">休息日那一条提醒得好，之前连续练有点疲劳，后来调整了好很多。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section-card" id="news">
+        <div class="section-head">
+          <h2>寸止练习相关资讯</h2>
+        </div>
+        <div class="news-list">
+          <div class="news-item">
+            <span class="news-date">2026-01-18</span>
+            <div class="news-body">
+              <a href="/#deep" class="news-title">节奏感知训练中记录方式的变化趋势</a>
+              <p class="news-brief">从主观描述到结构化记录，练习者越来越重视可回溯的时间数据。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2026-01-12</span>
+            <div class="news-body">
+              <a href="/#faq" class="news-title">延时控制练习中“时长焦虑”的讨论升温</a>
+              <p class="news-brief">更多练习者开始关注恢复感受与节奏稳定性，而非单次数字。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2026-01-05</span>
+            <div class="news-body">
+              <a href="/#guide" class="news-title">多段控时衔接方法的实践分享汇总</a>
+              <p class="news-brief">呼吸锚点与固定恢复间隔被反复提及，成为衔接阶段的常用做法。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-12-27</span>
+            <div class="news-body">
+              <a href="/#hot" class="news-title">寸止训练记录表模板的字段调整方向</a>
+              <p class="news-brief">恢复感受与注意力状态两项被更多练习者纳入日常记录。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-12-19</span>
+            <div class="news-body">
+              <a href="/#deep" class="news-title">分级练习中“回退机制”的作用被更多提及</a>
+              <p class="news-brief">允许退回上一档位，被认为有助于保持长期练习的稳定性。</p>
+            </div>
+          </div>
+          <div class="news-item">
+            <span class="news-date">2025-12-10</span>
+            <div class="news-body">
+              <a href="/#category" class="news-title">新手入门内容按时间维度重排的尝试</a>
+              <p class="news-brief">以30秒、60秒、90秒为节点组织内容，降低初次阅读的认知负担。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section-card" id="rec">
+        <div class="section-head">
+          <h2>寸止内容相关推荐</h2>
+        </div>
+        <div class="rec-tags">
+          <a href="/#deep">寸止训练方法拆解</a>
+          <a href="/#faq">节奏分级常见问题</a>
+          <a href="/#guide">延时控制入门步骤</a>
+          <a href="/#comments">恢复间隔设置参考</a>
+          <a href="/#news">多段控时衔接思路</a>
+          <a href="/#hot">练习记录表字段说明</a>
+          <a href="/#intro">呼吸配合基础要点</a>
+          <a href="/#latest">四周练习安排示例</a>
+        </div>
+      </section>
+
+      <!-- 11. 趋势观察 -->
+      <section class="section-card" id="trend">
+        <div class="section-head">
+          <h2>寸止练习趋势观察</h2>
+        </div>
+        <div class="trend-panel">
+          <div class="trend-box">
+            <h4>从“比时长”到“看节奏”</h4>
+            <p>越来越多练习者把注意力从单次时长转向节奏稳定性与恢复感受，记录方式也从模糊描述转向结构化字段。</p>
+          </div>
+          <div class="trend-box">
+            <h4>分级框架的接受度提升</h4>
+            <p>分档练习与回退机制被更多入门者接受，跳级练习的现象有所减少，练习安排的连续性更受重视。</p>
+          </div>
+          <div class="trend-box">
+            <h4>呼吸配合成为基础项</h4>
+            <p>呼吸节律不再被视为附加技巧，而是节奏感知的基础组成部分，相关讨论集中在如何用呼吸次数作为衔接锚点。</p>
+          </div>
+          <div class="trend-box">
+            <h4>记录工具趋于轻量</h4>
+            <p>练习记录从复杂表格转向三项核心字段，强调可持续填写，而不是一次性记录大量无法回溯的数据。</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 右栏 -->
+    <aside class="right-sidebar" aria-label="辅助阅读">
+      <div class="side-block">
+        <div class="side-title">本页目录</div>
+        <nav class="toc-list" aria-label="页内目录">
+          <a href="/#intro">入门简介</a>
+          <a href="/#hot">热门内容推荐</a>
+          <a href="/#latest">最新更新动态</a>
+          <a href="/#category">分类入口</a>
+          <a href="/#deep">深度解析</a>
+          <a href="/#guide">体验指南</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#comments">用户评论</a>
+          <a href="/#news">相关资讯</a>
+          <a href="/#rec">相关推荐</a>
+          <a href="/#trend">趋势观察</a>
+        </nav>
+      </div>
+      <div class="side-block">
+        <div class="side-title">热门条目</div>
+        <div class="hot-list">
+          <a href="/#deep"><span class="rank">1</span>寸止基础节奏分级说明</a>
+          <a href="/#guide"><span class="rank">2</span>多段控时衔接要点</a>
+          <a href="/#faq"><span class="rank">3</span>呼吸配合常见问题</a>
+          <a href="/#hot"><span class="rank">4</span>四周练习安排示例</a>
+          <a href="/#deep"><span class="rank">5</span>恢复间隔设置参考</a>
+        </div>
+      </div>
+      <div class="side-block">
+        <div class="side-title">延伸阅读</div>
+        <a href="/#intro" class="extend-item">寸止练习中的时间感知</a>
+        <a href="/#faq" class="extend-item">如何判断是否该退回上一档</a>
+        <a href="/#deep" class="extend-item">注意力转移的三种常用方式</a>
+        <a href="/#news" class="extend-item">近期练习讨论方向汇总</a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- 页尾 -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="brand-text">buy1take2<em>寸止</em></div>
+        <p>围绕节奏控制与延迟满足的练习参考，提供寸止训练方法、节奏分级、误区对照与进阶安排的示例内容。</p>
+      </div>
+      <div class="footer-col">
+        <h4>内容栏目</h4>
+        <a href="/#intro">入门简介</a>
+        <a href="/#hot">热门推荐</a>
+        <a href="/#latest">最新更新</a>
+        <a href="/#deep">深度解析</a>
+      </div>
+      <div class="footer-col">
+        <h4>练习参考</h4>
+        <a href="/#category">分类入口</a>
+        <a href="/#guide">体验指南</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#rec">相关推荐</a>
+      </div>
+      <div class="footer-col">
+        <h4>社区与观察</h4>
+        <a href="/#comments">用户评论</a>
+        <a href="/#news">相关资讯</a>
+        <a href="/#trend">趋势观察</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 buy1take2寸止 · 内容示例页面</span>
+      <span>部分内容为示例数据，仅用于展示页面结构</span>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      // 搜索过滤
+      var searchInput = document.getElementById('siteSearch');
+      var searchBtn = document.getElementById('searchBtn');
+      var hotCards = document.getElementById('hotCards');
+      var noResultTip = document.getElementById('noResultTip');
+      var filterTags = document.getElementById('filterTags');
+      var currentFilter = 'all';
+
+      function getCards() {
+        return hotCards ? Array.prototype.slice.call(hotCards.querySelectorAll('.content-card')) : [];
+      }
+
+      function applyFilter() {
+        var keyword = (searchInput ? searchInput.value : '').trim().toLowerCase();
+        var cards = getCards();
+        var visibleCount = 0;
+
+        cards.forEach(function (card) {
+          var category = card.getAttribute('data-category') || '';
+          var text = card.textContent.toLowerCase();
+          var matchFilter = currentFilter === 'all' || category === currentFilter;
+          var matchSearch = keyword === '' || text.indexOf(keyword) !== -1;
+          if (matchFilter && matchSearch) {
+            card.style.display = '';
+            visibleCount++;
+          } else {
+            card.style.display = 'none';
+          }
+        });
+
+        if (noResultTip) {
+          noResultTip.classList.toggle('show', visibleCount === 0);
+        }
+      }
+
+      if (searchInput) {
+        searchInput.addEventListener('input', applyFilter);
+        searchInput.addEventListener('keydown', function (e) {
+          if (e.key === 'Enter') { e.preventDefault(); applyFilter(); }
+        });
+      }
+      if (searchBtn) {
+        searchBtn.addEventListener('click', function (e) {
+          e.preventDefault();
+          applyFilter();
+        });
+      }
+
+      if (filterTags) {
+        filterTags.addEventListener('click', function (e) {
+          var btn = e.target.closest('button[data-filter]');
+          if (!btn) return;
+          Array.prototype.forEach.call(filterTags.querySelectorAll('button'), function (b) {
+            b.classList.remove('active');
+          });
+          btn.classList.add('active');
+          currentFilter = btn.getAttribute('data-filter');
+          applyFilter();
+        });
+      }
+
+      // 初始无过滤
+      applyFilter();
+    })();
+  </script>
+</body>
+  </html>
