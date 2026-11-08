@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>每日黑料大乱斗-争议话题盘点_吃瓜合集_事件对比</title>
+  <meta name="description" content="每日黑料大乱斗提供争议事件、话题盘点与网红翻车合集，按类型整理吃瓜内容，适合关注网络热点与舆论反转的读者。">
+  <meta name="keywords" content="争议事件盘点,网红翻车合集,吃瓜话题整理,舆论反转追踪,网络热点对比">
+  <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+  <style>
+    :root {
+      --bg: #0f0e12;
+      --panel: #1a1820;
+      --panel-2: #211f28;
+      --line: #332f3d;
+      --text: #ece7f2;
+      --text-dim: #a49bb3;
+      --accent: #e63a5e;
+      --accent-2: #ffb347;
+      --accent-soft: #2c1820;
+      --blue: #4a7cff;
+      --radius: 10px;
+      --radius-sm: 6px;
+      --shadow: 0 8px 24px rgba(0,0,0,.45);
+      --header-h: 56px;
+      --notice-h: 36px;
+      --gap: 20px;
+      --container: 1380px;
+      --font: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    html { scroll-behavior:smooth; scroll-padding-top: calc(var(--notice-h) + var(--header-h) + 12px); }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font);
+      font-size: 15px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    ul, ol { list-style: none; }
+    img, svg { display:block; max-width:100%; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
+    .container { width: 100%; max-width: var(--container); margin: 0 auto; padding: 0 24px; }
+    /* sticky wrapper */
+    .sticky-top {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--bg);
+    }
+    /* notice bar */
+    .notice-bar {
+      height: var(--notice-h);
+      line-height: var(--notice-h);
+      background: linear-gradient(90deg, #3b1522, #54202e 40%, #3b1522);
+      color: #ffd9e0;
+      font-size: 13px;
+      letter-spacing: .3px;
+      border-bottom: 1px solid #612433;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .notice-bar .container { display:flex; align-items:center; gap:10px; overflow:hidden; }
+    .notice-bar .badge {
+      flex:0 0 auto;
+      background: var(--accent);
+      color:#fff;
+      font-size: 11px;
+      font-weight:700;
+      padding: 1px 8px;
+      border-radius: 3px;
+      letter-spacing: 1px;
+    }
+    .notice-bar p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      font-size: 13px;
+    }
+    /* header */
+    .site-header {
+      height: var(--header-h);
+      background: rgba(18,17,23,.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line);
+    }
+    .site-header .container {
+      display:flex;
+      align-items:center;
+      height:100%;
+      gap: 22px;
+    }
+    .brand {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+    .brand-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: radial-gradient(circle at 30% 30%, #ff5a7a, #b3173a 70%);
+      position: relative;
+      box-shadow: 0 0 0 1px #6d1d30 inset, 0 4px 10px rgba(230,58,94,.3);
+    }
+    .brand-mark::before {
+      content:"";
+      position:absolute;
+      width: 12px; height: 12px;
+      border: 2px solid #fff;
+      border-radius: 50%;
+      top: 7px; left: 7px;
+      opacity: .85;
+    }
+    .brand-mark::after {
+      content:"";
+      position:absolute;
+      width: 8px; height: 2px;
+      background: #fff;
+      bottom: 8px; right: 6px;
+      transform: rotate(-45deg);
+      opacity: .8;
+    }
+    .brand-text {
+      font-weight: 800;
+      font-size: 19px;
+      letter-spacing: .5px;
+      background: linear-gradient(90deg, #fff, #ffb7c4);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      white-space: nowrap;
+    }
+    .header-nav {
+      display:flex;
+      align-items:center;
+      gap: 4px;
+      flex: 1 1 auto;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .header-nav::-webkit-scrollbar { display:none; }
+    .header-nav a {
+      font-size: 13.5px;
+      color: var(--text-dim);
+      padding: 6px 11px;
+      border-radius: 20px;
+      white-space: nowrap;
+      transition: .2s;
+    }
+    .header-nav a:hover, .header-nav a:focus-visible {
+      color:#fff;
+      background: #2a2532;
+      outline: none;
+    }
+    .header-actions {
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+    .search-box {
+      display:flex;
+      align-items:center;
+      background: #1c1a22;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 0 4px 0 12px;
+      height: 34px;
+      transition: .2s;
+    }
+    .search-box:focus-within { border-color: var(--accent); }
+    .search-box input {
+      width: 150px;
+      background: transparent;
+      border: none;
+      color: var(--text);
+      font-size: 13px;
+      outline: none;
+      font-family: inherit;
+    }
+    .search-box input::placeholder { color:#6a6276; }
+    .search-box button {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      display:grid; place-items:center;
+      background: #2a2532;
+      color:#c9c1d6;
+      font-size: 14px;
+    }
+    .search-box button:hover { background: var(--accent); color:#fff; }
+    .search-feedback {
+      position: absolute;
+      top: 100%;
+      right: 80px;
+      background: #231f2b;
+      border:1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 13px;
+      color: var(--text-dim);
+      box-shadow: var(--shadow);
+      display: none;
+      z-index: 60;
+    }
+    .search-feedback.show { display:block; }
+    /* hero */
+    .hero {
+      position: relative;
+      background: radial-gradient(1200px 400px at 20% 0%, #2d1420 0%, transparent 60%),
+                  linear-gradient(180deg, #16131c 0%, #0f0e12 100%);
+      border-bottom: 1px solid var(--line);
+      overflow: hidden;
+    }
+    .hero .container {
+      display:grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 40px;
+      padding-top: 42px;
+      padding-bottom: 42px;
+      align-items: center;
+    }
+    .hero-left h1 {
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.15;
+      letter-spacing: 1px;
+      font-weight: 900;
+      margin-bottom: 14px;
+      background: linear-gradient(120deg, #fff 20%, #ffb7c4 60%, #ff5a7a);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      word-break: break-all;
+    }
+    .hero-sub {
+      color: var(--text-dim);
+      font-size: 15px;
+      max-width: 560px;
+      margin-bottom: 18px;
+    }
+    .hero-meta {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 8px 14px;
+      margin-bottom: 22px;
+      font-size: 13px;
+      color: #b9aec9;
+    }
+    .hero-meta span {
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+    .dot { width:6px; height:6px; border-radius:50%; background: var(--accent); display:inline-block; }
+    .hero-btns { display:flex; flex-wrap:wrap; gap:12px; }
+    .btn {
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:6px;
+      height: 42px;
+      padding: 0 22px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: .2s;
+      border: 1px solid transparent;
+    }
+    .btn-primary { background: var(--accent); color:#fff; box-shadow: 0 6px 18px rgba(230,58,94,.35); }
+    .btn-primary:hover { background: #f04a6c; }
+    .btn-ghost { background: #211f28; color: var(--text); border-color: var(--line); }
+    .btn-ghost:hover { border-color: #5a4c6b; background:#272330; }
+    .hero-visual {
+      position: relative;
+      height: 260px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .hero-visual svg { width:100%; height:100%; max-width: 400px; }
+    /* main layout */
+    .main-layout {
+      display:grid;
+      grid-template-columns: 180px minmax(0, 1fr) 250px;
+      gap: var(--gap);
+      padding-top: 28px;
+      padding-bottom: 40px;
+      align-items: start;
+    }
+    /* left sidebar */
+    .left-sidebar { position: sticky; top: calc(var(--notice-h) + var(--header-h) + 16px); }
+    .side-block {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 14px 12px;
+      margin-bottom: 16px;
+    }
+    .side-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: #8b7f9c;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      padding-left: 4px;
+    }
+    .channel-list a {
+      display:flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 13.5px;
+      color: #cbc2d8;
+      transition: .15s;
+      margin-bottom: 2px;
+    }
+    .channel-list a:hover, .channel-list a:focus-visible {
+      background: #2a2434;
+      color:#fff;
+      outline: none;
+    }
+    .channel-list a .ico {
+      width: 16px; height: 16px;
+      border-radius: 4px;
+      background: #3a3048;
+      display:inline-block;
+      flex:0 0 auto;
+    }
+    .channel-list a:nth-child(1) .ico { background: #e63a5e; }
+    .channel-list a:nth-child(2) .ico { background: #ffb347; }
+    .channel-list a:nth-child(3) .ico { background: #4a7cff; }
+    .channel-list a:nth-child(4) .ico { background: #38c9a8; }
+    .channel-list a:nth-child(5) .ico { background: #b86bff; }
+    .tag-cloud { display:flex; flex-wrap:wrap; gap:6px; }
+    .tag-cloud a {
+      font-size: 12px;
+      padding: 4px 9px;
+      border-radius: 20px;
+      background: #262130;
+      color:#b9aec9;
+      transition: .15s;
+    }
+    .tag-cloud a:hover { background: var(--accent); color:#fff; }
+    /* main column */
+    .main-col { min-width: 0; }
+    .section-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 22px 22px 20px;
+      margin-bottom: var(--gap);
+    }
+    .section-head {
+      display:flex;
+      align-items:baseline;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom: 16px;
+      flex-wrap:wrap;
+    }
+    .section-head h2 {
+      font-size: 19px;
+      font-weight: 800;
+      letter-spacing: .5px;
+      position:relative;
+      padding-left: 14px;
+    }
+    .section-head h2::before {
+      content:"";
+      position:absolute;
+      left:0; top: 4px; bottom: 4px;
+      width: 4px;
+      border-radius: 2px;
+      background: linear-gradient(180deg, var(--accent), #7a2a3f);
+    }
+    .section-head .sub {
+      font-size: 12.5px;
+      color: var(--text-dim);
+    }
+    /* intro */
+    .intro-text p {
+      margin-bottom: 12px;
+      color: #d4ccdf;
+      font-size: 14.5px;
+    }
+    .intro-text p:last-child { margin-bottom: 0; }
+    .intro-text strong { color: #ffb7c4; font-weight: 600; }
+    /* cards grid */
+    .card-grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .content-card {
+      background: var(--panel-2);
+      border: 1px solid #302b3b;
+      border-radius: var(--radius-sm);
+      padding: 14px;
+      display:flex;
+      flex-direction:column;
+      gap: 8px;
+      transition: .18s;
+    }
+    .content-card:hover {
+      border-color: #4d3e60;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,.35);
+    }
+    .card-type {
+      font-size: 11px;
+      color: var(--accent-2);
+      letter-spacing: 1px;
+      font-weight: 700;
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+    .card-type::before { content:"●"; font-size: 8px; color: var(--accent); }
+    .content-card h3 {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.4;
+      color: #f2edf7;
+    }
+    .content-card .desc {
+      font-size: 12.5px;
+      color: #a99fb8;
+      line-height: 1.6;
+      flex:1;
+    }
+    .card-tags {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 5px;
+    }
+    .card-tags span {
+      font-size: 10.5px;
+      padding: 1px 7px;
+      border-radius: 20px;
+      background: #2b2536;
+      color: #b0a5c0;
+    }
+    .card-foot {
+      display:flex;
+      justify-content:space-between;
+      font-size: 11px;
+      color: #7a6f8a;
+      border-top: 1px solid #2c2735;
+      padding-top: 6px;
+      margin-top: 2px;
+    }
+    /* list updates */
+    .update-list li {
+      display:flex;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px dashed #2b2634;
+      align-items: flex-start;
+    }
+    .update-list li:last-child { border-bottom: none; }
+    .update-idx {
+      flex:0 0 26px;
+      height: 26px;
+      border-radius: 6px;
+      background: #2b2233;
+      color: var(--accent-2);
+      font-size: 12px;
+      font-weight: 700;
+      display:grid;
+      place-items:center;
+    }
+    .update-body { flex:1; min-width:0; }
+    .update-body .name {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e8e1f0;
+      margin-bottom: 2px;
+    }
+    .update-body .txt {
+      font-size: 12.5px;
+      color: #9d93ad;
+    }
+    /* category pills */
+    .cat-grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;
+    }
+    .cat-item {
+      background: #211d2b;
+      border: 1px solid #332c40;
+      border-radius: var(--radius-sm);
+      padding: 12px 10px;
+      text-align:center;
+      font-size: 13.5px;
+      font-weight: 600;
+      color: #d6cce4;
+      transition: .18s;
+    }
+    .cat-item:hover, .cat-item:focus-visible {
+      border-color: var(--accent);
+      color: #fff;
+      background: #2b1f2b;
+      outline: none;
+    }
+    /* deep dive */
+    .deep-text h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 20px 0 8px;
+      color: #f5dce3;
+      padding-left: 10px;
+      border-left: 3px solid var(--accent);
+    }
+    .deep-text h3:first-child { margin-top: 0; }
+    .deep-text p {
+      font-size: 14px;
+      color: #cfc6db;
+      margin-bottom: 10px;
+      line-height: 1.8;
+    }
+    .deep-text ul {
+      margin: 6px 0 12px 18px;
+      list-style: disc;
+      color: #c0b6ce;
+      font-size: 13.5px;
+    }
+    .deep-text ul li { margin-bottom: 5px; }
+    .deep-text .kw { color: #ff9bb0; font-weight: 600; }
+    /* guide steps */
+    .guide-steps {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(190px,1fr));
+      gap: 12px;
+    }
+    .step {
+      background: #1e1a27;
+      border: 1px solid #2e2838;
+      border-radius: var(--radius-sm);
+      padding: 14px;
+    }
+    .step-num {
+      width: 26px; height: 26px;
+      border-radius: 50%;
+      background: var(--accent);
+      color:#fff;
+      font-size: 13px;
+      font-weight: 800;
+      display:grid;
+      place-items:center;
+      margin-bottom: 8px;
+    }
+    .step h4 { font-size: 14px; margin-bottom: 4px; color:#f0e9f6; }
+    .step p { font-size: 12.5px; color: #a99fb8; line-height:1.6; }
+    /* FAQ */
+    details {
+      border-bottom: 1px solid #2b2536;
+      padding: 10px 0;
+    }
+    details:last-of-type { border-bottom: none; }
+    summary {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e8dff2;
+      cursor: pointer;
+      list-style: none;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+      outline: none;
+    }
+    summary::-webkit-details-marker { display:none; }
+    summary::after {
+      content:"＋";
+      color: var(--accent-2);
+      font-size: 15px;
+      font-weight: 400;
+      flex:0 0 auto;
+    }
+    details[open] summary::after { content:"－"; }
+    details p {
+      font-size: 13px;
+      color: #b3a9c3;
+      padding: 8px 4px 2px 0;
+      line-height: 1.75;
+    }
+    /* comments */
+    .comment-grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+      gap: 10px;
+    }
+    .comment-item {
+      background: #1e1a27;
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      border: 1px solid #2a2533;
+    }
+    .comment-user {
+      font-size: 12px;
+      font-weight: 700;
+      color: #ffb7c4;
+      margin-bottom: 3px;
+      display:flex;
+      align-items:center;
+      gap:6px;
+    }
+    .comment-user .avatar {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: #3a2d48;
+      display:inline-block;
+    }
+    .comment-item p { font-size: 12.5px; color: #a99fb8; line-height:1.6; }
+    /* news */
+    .news-item {
+      display:flex;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid #26212e;
+    }
+    .news-item:last-child { border-bottom:none; }
+    .news-date {
+      flex:0 0 62px;
+      font-size: 11.5px;
+      color: #8a7f9b;
+      padding-top: 2px;
+    }
+    .news-body h4 { font-size: 14px; font-weight: 600; margin-bottom: 2px; color:#e8e1f0; }
+    .news-body p { font-size: 12.5px; color: #9d93ad; line-height:1.6; }
+    /* recommended tags */
+    .rec-list {
+      display:flex;
+      flex-wrap:wrap;
+      gap: 8px;
+    }
+    .rec-list a {
+      font-size: 12.5px;
+      padding: 6px 13px;
+      border-radius: 20px;
+      background: #24202e;
+      border: 1px solid #332d40;
+      color: #c4b8d4;
+      transition: .15s;
+    }
+    .rec-list a:hover { border-color: var(--accent); color:#fff; background:#2e2130; }
+    /* right sidebar */
+    .right-sidebar { position: sticky; top: calc(var(--notice-h) + var(--header-h) + 16px); }
+    .toc-list a {
+      display:block;
+      font-size: 12.5px;
+      color: #9d93ad;
+      padding: 4px 0 4px 10px;
+      border-left: 2px solid #2f2a3a;
+      margin-bottom: 3px;
+      transition: .15s;
+    }
+    .toc-list a:hover { color: #fff; border-left-color: var(--accent); }
+    .hot-item {
+      display:flex;
+      gap: 8px;
+      padding: 7px 0;
+      font-size: 12.5px;
+      color: #b9aec9;
+      align-items: flex-start;
+      border-bottom: 1px dashed #26212e;
+    }
+    .hot-item:last-child { border-bottom:none; }
+    .hot-rank {
+      flex:0 0 18px;
+      font-weight: 800;
+      color: #5c506e;
+      font-size: 12px;
+    }
+    .hot-item:nth-child(1) .hot-rank { color: var(--accent); }
+    .hot-item:nth-child(2) .hot-rank { color: var(--accent-2); }
+    .hot-item:nth-child(3) .hot-rank { color: #ffd36e; }
+    /* footer */
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: #121017;
+      padding: 32px 0 20px;
+      margin-top: 10px;
+    }
+    .footer-grid {
+      display:grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 22px;
+    }
+    .footer-brand .brand-text { font-size: 17px; display:inline-block; margin-bottom: 6px; }
+    .footer-brand p { font-size: 12.5px; color: #7d728d; max-width: 260px; line-height:1.7; }
+    .footer-col h5 { font-size: 12px; letter-spacing: 1px; color: #8b7f9c; margin-bottom: 10px; font-weight:700; }
+    .footer-col a { display:block; font-size: 12.5px; color: #9d93ad; padding: 3px 0; }
+    .footer-col a:hover { color: #fff; }
+    .footer-bottom {
+      border-top: 1px solid #221e2b;
+      padding-top: 16px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      gap: 10px;
+      font-size: 11.5px;
+      color: #6a5f7a;
+    }
+    /* responsive */
+    @media (max-width: 1100px) {
+      .main-layout { grid-template-columns: 160px minmax(0,1fr); }
+      .right-sidebar { display:none; }
+      .hero .container { grid-template-columns: 1fr; gap: 24px; }
+      .hero-visual { height: 200px; }
+    }
+    @media (max-width: 760px) {
+      .main-layout { grid-template-columns: 1fr; }
+      .left-sidebar { position: static; display:flex; flex-wrap:wrap; gap: 10px; margin-bottom: 4px; }
+      .left-sidebar .side-block { flex:1 1 160px; margin-bottom: 0; }
+      .header-nav { display:none; }
+      .search-box input { width: 90px; }
+      .brand-text { font-size: 16px; }
+      .section-card { padding: 18px 16px; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .hero-left h1 { font-size: 28px; }
+    }
+    @media (max-width: 420px) {
+      .container { padding: 0 14px; }
+      .card-grid { grid-template-columns: 1fr; }
+      .comment-grid { grid-template-columns: 1fr; }
+      .search-box { display:none; }
+    }
+    .visually-hidden {
+      position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+      overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0;
+    }
+    .no-results {
+      display:none;
+      padding: 16px;
+      text-align:center;
+      color:#b3a9c3;
+      font-size:14px;
+      background:#1d1925;
+      border-radius:8px;
+      margin-top:10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 吸顶公告条 + 页头 -->
+  <div class="sticky-top">
+    <div class="notice-bar" role="status">
+      <div class="container">
+        <span class="badge">上新</span>
+        <p>10月24日 争议话题合辑更新：网红翻车合集、舆论反转追踪、事件对比清单已上架，按类型筛选即可查看。</p>
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container">
+        <a href="/#top" class="brand" aria-label="每日黑料大乱斗 首页">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span class="brand-text">每日黑料大乱斗</span>
+        </a>
+        <nav class="header-nav" aria-label="主题频道">
+          <a href="/#hot">翻车合集</a>
+          <a href="/#updates">反转追踪</a>
+          <a href="/#cats">事件对比</a>
+          <a href="/#deep">深扒解析</a>
+          <a href="/#faq">吃瓜问答</a>
+          <a href="/#comments">网友评论</a>
+          <a href="/#news">舆论动态</a>
+        </nav>
+        <div class="header-actions">
+          <div class="search-box" id="searchBox">
+            <label for="siteSearch" class="visually-hidden">搜索内容</label>
+            <input type="text" id="siteSearch" placeholder="搜事件/网红/合集…" aria-label="搜索内容">
+            <button type="button" id="searchBtn" aria-label="搜索">🔍</button>
+          </div>
+        </div>
+      </div>
+      <div class="search-feedback" id="searchFeedback" role="status">没有找到匹配内容，换个关键词试试。</div>
+    </header>
+  </div>
+
+  <!-- 首屏 -->
+  <section class="hero" id="top">
+    <div class="container">
+      <div class="hero-left">
+        <h1>每日黑料大乱斗</h1>
+        <p class="hero-sub">争议事件、网红翻车、舆论反转——按类型整理成吃瓜合集。每天更新可看条目，适合关注网络热点与话题对比的读者。从翻车现场到事件后续，一次看清来龙去脉。</p>
+        <div class="hero-meta">
+          <span><i class="dot"></i> 每日 6-10 条更新</span>
+          <span><i class="dot"></i> 12 类争议标签</span>
+          <span><i class="dot"></i> 反转时间线对比</span>
+        </div>
+        <div class="hero-btns">
+          <a href="/#hot" class="btn btn-primary">看今日翻车合集</a>
+          <a href="/#deep" class="btn btn-ghost">深扒解析</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e63a5e" stop-opacity=".8"/>
+              <stop offset="1" stop-color="#6b1d2f" stop-opacity=".2"/>
+            </linearGradient>
+            <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#ffb347" stop-opacity=".7"/>
+              <stop offset="1" stop-color="#4a2a0e" stop-opacity=".1"/>
+            </linearGradient>
+          </defs>
+          <circle cx="200" cy="140" r="100" stroke="#332f3d" stroke-width="1.5" stroke-dasharray="4 6"/>
+          <circle cx="200" cy="140" r="70" stroke="#3d3748" stroke-width="1"/>
+          <path d="M120 190 L180 90 L240 150 L300 70" stroke="url(#g1)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M140 230 L200 160 L260 200 L310 130" stroke="url(#g2)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="8 5"/>
+          <circle cx="180" cy="90" r="6" fill="#e63a5e"/>
+          <circle cx="240" cy="150" r="5" fill="#ffb347"/>
+          <circle cx="300" cy="70" r="7" fill="#fff" opacity=".85"/>
+          <rect x="60" y="220" width="40" height="6" rx="3" fill="#3d3448"/>
+          <rect x="60" y="232" width="26" height="5" rx="2.5" fill="#2e2838"/>
+          <rect x="300" y="210" width="46" height="6" rx="3" fill="#3d3448"/>
+          <rect x="320" y="222" width="26" height="5" rx="2.5" fill="#2e2838"/>
+          <text x="200" y="260" text-anchor="middle" fill="#5c506e" font-size="11" font-family="system-ui">争议 · 反转 · 对比</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- 三栏主内容 -->
+  <div class="container main-layout">
+    <!-- 左栏 -->
+    <aside class="left-sidebar" aria-label="频道导航与标签">
+      <div class="side-block">
+        <div class="side-title">频道</div>
+        <nav class="channel-list" aria-label="内容频道">
+          <a href="/#hot"><span class="ico"></span>翻车合集</a>
+          <a href="/#updates"><span class="ico"></span>反转追踪</a>
+          <a href="/#cats"><span class="ico"></span>事件对比</a>
+          <a href="/#deep"><span class="ico"></span>深扒解析</a>
+          <a href="/#guide"><span class="ico"></span>吃瓜指南</a>
+          <a href="/#faq"><span class="ico"></span>常见问答</a>
+          <a href="/#comments"><span class="ico"></span>网友评论</a>
+          <a href="/#news"><span class="ico"></span>舆论动态</a>
+          <a href="/#rec"><span class="ico"></span>内容推荐</a>
+        </nav>
+      </div>
+      <div class="side-block">
+        <div class="side-title">热门标签</div>
+        <div class="tag-cloud">
+          <a href="/#hot">网红翻车</a>
+          <a href="/#updates">打脸反转</a>
+          <a href="/#cats">人设崩塌</a>
+          <a href="/#deep">聊天记录</a>
+          <a href="/#hot">道歉声明</a>
+          <a href="/#deep">时间线对比</a>
+          <a href="/#news">品牌解约</a>
+          <a href="/#faq">吃瓜必看</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 中栏 -->
+    <main class="main-col">
+      <!-- 板块1 内容简介 -->
+      <section class="section-card" id="intro">
+        <div class="section-head">
+          <h2>内容简介：争议事件合集怎么整理</h2>
+        </div>
+        <div class="intro-text">
+          <p><strong>每日黑料大乱斗</strong>把网络上的争议事件、网红翻车、舆论反转按类型整理成可浏览的合集。每一条目保留事件梗概、关键节点和后续进展，方便读者快速了解“谁、什么事、翻转在哪”。适合喜欢追踪热点、对比各方说法的吃瓜读者。</p>
+          <p>页面内容按“翻车合集”“反转追踪”“事件对比”三个方向分区：翻车合集侧重网红翻车合集与人设崩塌现场；反转追踪围绕打脸反转和道歉声明后的舆论变化；事件对比把同类争议放在一起，看处理方式和结果差异。每个条目都标注类型标签，点击标签可查看同类内容。</p>
+          <p>更新节奏以每日 6—10 条为主，重大事件会单独补充时间线。吃瓜话题整理不追求站队，只把公开讨论中的关键说法列出来，方便读者自己判断。如果你在找“网红翻车合集”“舆论反转追踪”“事件对比清单”这类内容，可以直接从对应频道进入。</p>
+        </div>
+      </section>
+
+      <!-- 板块2 热门内容推荐 -->
+      <section class="section-card" id="hot">
+        <div class="section-head">
+          <h2>今日翻车合集推荐</h2>
+          <span class="sub">网红翻车 · 人设崩塌 · 道歉声明</span>
+        </div>
+        <div class="card-grid" id="hotCardGrid">
+          <article class="content-card">
+            <div class="card-type">翻车现场</div>
+            <h3>美食博主“阿凯探店”被指收钱刷好评</h3>
+            <p class="desc">多条聊天记录显示同一店铺反复推荐，评论区出现大量模板化好评截图，博主暂未回应。</p>
+            <div class="card-tags"><span>网红翻车</span><span>刷好评</span><span>聊天记录</span></div>
+            <div class="card-foot"><span>热度 9.2</span><span>今日更新</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-type">反转追踪</div>
+            <h3>“小鹿情感”分手声明后遭前任晒时间线</h3>
+            <p class="desc">声明发出三小时后，前任放出完整聊天记录与行程对比，舆论出现明显翻转。</p>
+            <div class="card-tags"><span>打脸反转</span><span>时间线对比</span><span>情感争议</span></div>
+            <div class="card-foot"><span>热度 8.7</span><span>2小时前</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-type">事件对比</div>
+            <h3>三起带货翻车道歉声明对比：谁在避重就轻</h3>
+            <p class="desc">把“阿凯探店”“大晴美妆”“老周数码”三份道歉声明放在一起，看话术结构和赔偿方案差异。</p>
+            <div class="card-tags"><span>道歉声明</span><span>带货翻车</span><span>声明对比</span></div>
+            <div class="card-foot"><span>热度 8.1</span><span>昨日更新</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-type">人设崩塌</div>
+            <h3>“健身教练大宇”学历质疑持续发酵</h3>
+            <p class="desc">网友比对公开资料发现认证信息前后矛盾，品牌方悄悄撤下合作海报。</p>
+            <div class="card-tags"><span>人设崩塌</span><span>学历质疑</span><span>品牌解约</span></div>
+            <div class="card-foot"><span>热度 7.9</span><span>今日更新</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-type">反转追踪</div>
+            <h3>“租房避雷”帖被房东完整回应</h3>
+            <p class="desc">租客长文控诉后，房东放出合同与维修记录，评论区开始重新站队。</p>
+            <div class="card-tags"><span>舆论反转</span><span>租房争议</span><span>合同细节</span></div>
+            <div class="card-foot"><span>热度 7.4</span><span>3小时前</span></div>
+          </article>
+          <article class="content-card">
+            <div class="card-type">吃瓜话题</div>
+            <h3>“猫咖虐猫”传言与监控片段对比</h3>
+            <p class="desc">传言截图与店内监控时间对不上，店方放出完整片段，事件进入核实阶段。</p>
+            <div class="card-tags"><span>传言核实</span><span>监控对比</span><span>动物争议</span></div>
+            <div class="card-foot"><span>热度 6.8</span><span>昨日更新</span></div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 板块3 最新更新 -->
+      <section class="section-card" id="updates">
+        <div class="section-head">
+          <h2>反转追踪：最新更新与进展</h2>
+          <span class="sub">打脸反转 · 舆论变化 · 后续回应</span>
+        </div>
+        <ul class="update-list" id="updateList">
+          <li><span class="update-idx">01</span><div class="update-body"><div class="name">“阿凯探店”合作方放出后台结算截图</div><div class="txt">截图显示多笔推广费用，博主此前“纯自费”说法受到质疑。</div></div></li>
+          <li><span class="update-idx">02</span><div class="update-body"><div class="name">“小鹿情感”前任再发长文补充细节</div><div class="txt">新增行程记录与聊天时间对比，回应声明中的“和平分手”说法。</div></div></li>
+          <li><span class="update-idx">03</span><div class="update-body"><div class="name">“大晴美妆”带货翻车后公布退款方案</div><div class="txt">方案覆盖批次和金额，评论区关注执行时间与流程。</div></div></li>
+          <li><span class="update-idx">04</span><div class="update-body"><div class="name">“老周数码”删改道歉声明引二次讨论</div><div class="txt">声明中赔偿表述前后不同，被网友截图存档对比。</div></div></li>
+          <li><span class="update-idx">05</span><div class="update-body"><div class="name">“健身教练大宇”合作品牌撤下相关海报</div><div class="txt">品牌方未发正式声明，但官方页面已找不到合作信息。</div></div></li>
+          <li><span class="update-idx">06</span><div class="update-body"><div class="name">“租房避雷”房东补充物业维修记录</div><div class="txt">记录显示租期内多次报修，租客长文中的“从未维修”说法被质疑。</div></div></li>
+          <li><span class="update-idx">07</span><div class="update-body"><div class="name">“猫咖虐猫”事件进入平台核实流程</div><div class="txt">平台方表示已收到双方材料，监控片段正在比对时间戳。</div></div></li>
+          <li><span class="update-idx">08</span><div class="update-body"><div class="name">“旅行博主阿然”被指盗图后致歉</div><div class="txt">致歉内容承认部分图片来自网络，承诺重新拍摄并标注来源。</div></div></li>
+        </ul>
+      </section>
+
+      <!-- 板块4 分类入口 -->
+      <section class="section-card" id="cats">
+        <div class="section-head">
+          <h2>事件对比分类入口</h2>
+          <span class="sub">按争议类型筛选</span>
+        </div>
+        <div class="cat-grid">
+          <a href="/#hot" class="cat-item">网红翻车合集</a>
+          <a href="/#updates" class="cat-item">打脸反转追踪</a>
+          <a href="/#deep" class="cat-item">人设崩塌现场</a>
+          <a href="/#hot" class="cat-item">道歉声明对比</a>
+          <a href="/#updates" class="cat-item">舆论反转时间线</a>
+          <a href="/#news" class="cat-item">品牌解约动态</a>
+          <a href="/#hot" class="cat-item">聊天记录争议</a>
+          <a href="/#deep" class="cat-item">带货翻车复盘</a>
+        </div>
+      </section>
+
+      <!-- 板块5 深度解析正文 -->
+      <section class="section-card" id="deep">
+        <div class="section-head">
+          <h2>深扒解析：争议事件的三个观察角度</h2>
+        </div>
+        <div class="deep-text">
+          <h3>一、翻车现场的信息来源与可信度</h3>
+          <p>翻车合集里常见的信息来源包括聊天记录截图、后台结算单、合作方声明和路人偶遇照片。不同来源的可信度差别很大：聊天记录容易被截取片段，后台截图需要核对账号主体，合作方声明通常带有自身立场。看每日黑料大乱斗的条目时，先注意“谁提供的材料”，再看材料是否完整。</p>
+          <p>以“阿凯探店”为例，最初的质疑来自评论区模板化好评，随后有合作方放出结算截图。前者是观察线索，后者是更直接的交易记录。但结算截图同样需要确认是不是同一账号、同一时间段。争议事件里，单一来源很少能直接定论，多来源交叉才更接近事实。</p>
+          <h3>二、反转追踪的常见节点</h3>
+          <p>舆论反转通常有几个节点：当事人首次回应、另一方放出新证据、平台介入核实、品牌方调整合作。每个节点都会改变评论区的风向。追踪反转时，把时间线拉出来对比，比只看单条动态更清楚。</p>
+          <ul>
+            <li>首次回应是否具体，还是只表达情绪；</li>
+            <li>新证据是否带有可验证的时间、账号或第三方记录；</li>
+            <li>品牌方动作是正式声明还是悄悄下架；</li>
+            <li>平台是否给出核实结论或处理结果。</li>
+          </ul>
+          <p>“小鹿情感”事件里，声明发出后三小时前任放出时间线，舆论迅速转向。关键不在于谁说得更动情，而在于时间线能否对上行程和聊天记录。反转追踪的价值就是把散落的节点排成一条线。</p>
+          <h3>三、事件对比看什么：声明、赔偿与后续</h3>
+          <p>把同类事件放在一起对比，能看出处理方式的差异。道歉声明对比主要看三点：是否承认具体问题、是否给出可执行的赔偿或整改方案、后续有没有实际行动。带货翻车尤其如此，声明写得再长，退款流程不清晰也会引发二次讨论。</p>
+          <p>“大晴美妆”公布退款方案后，讨论焦点从“翻车”转向“怎么退、多久到账”；“老周数码”删改声明则让对比更复杂。每日黑料大乱斗在整理事件对比时，会把声明原文要点、赔偿方案和后续更新放在同一视图里，减少来回翻找。</p>
+          <p>另外，人设崩塌类事件往往不是单点问题，而是多个小矛盾累积。学历质疑、合作品牌撤海报、过往发言被翻出，这些线索单独看都不算决定性，合在一起才形成完整判断。看这类内容时，先分清“事实”和“推测”，再决定要不要继续追。</p>
+        </div>
+      </section>
+
+      <!-- 板块6 体验指南 -->
+      <section class="section-card" id="guide">
+        <div class="section-head">
+          <h2>吃瓜指南：页面功能与追更方式</h2>
+        </div>
+        <div class="guide-steps">
+          <div class="step"><div class="step-num">1</div><h4>按类型找合集</h4><p>左栏频道和分类入口把翻车合集、反转追踪、事件对比分开，点进去只看同类内容。</p></div>
+          <div class="step"><div class="step-num">2</div><h4>用搜索框筛选</h4><p>在页头输入网红名字或事件关键词，页面会即时过滤卡片，没有结果会给出提示。</p></div>
+          <div class="step"><div class="step-num">3</div><h4>看时间线对比</h4><p>反转追踪板块按更新顺序排列，方便对照各方回应的时间先后。</p></div>
+          <div class="step"><div class="step-num">4</div><h4>移动端追更</h4><p>手机端频道转为横向导航，侧栏内容放在主内容之后，上下滑动即可浏览。</p></div>
+          <div class="step"><div class="step-num">5</div><h4>延伸阅读路径</h4><p>每张卡片带类型标签，点击标签可跳转到对应板块，继续看同类事件。</p></div>
+        </div>
+      </section>
+
+      <!-- 板块7 FAQ -->
+      <section class="section-card" id="faq">
+        <div class="section-head">
+          <h2>常见问答：争议内容怎么判断</h2>
+        </div>
+        <details>
+          <summary>网红翻车合集里的内容适合什么人看？</summary>
+          <p>适合关注网络热点、想快速了解事件梗概的读者。如果你只是想吃瓜看个大概，可以从翻车合集入手；如果想看各方说法和时间线，再去反转追踪和深扒解析。</p>
+        </details>
+        <details>
+          <summary>“每日黑料大乱斗”一般多久更新一次？</summary>
+          <p>常规更新以每日 6—10 条为主，重大事件会补充时间线或单独整理对比。更新内容集中在翻车合集和反转追踪两个板块，事件对比按类型不定期汇总。</p>
+        </details>
+        <details>
+          <summary>道歉声明对比主要看哪些点？</summary>
+          <p>看是否承认具体问题、有没有可执行的赔偿或整改方案、后续有没有实际行动。声明写得长不等于说清楚，重点看有没有对应到争议本身。</p>
+        </details>
+        <details>
+          <summary>聊天记录截图能直接当作事实吗？</summary>
+          <p>不能直接当作定论。聊天记录容易截取片段，需要核对账号主体、时间和其他来源。页面里出现截图类线索时，通常还会列出其他材料，方便交叉判断。</p>
+        </details>
+        <details>
+          <summary>人设崩塌和带货翻车有什么区别？</summary>
+          <p>人设崩塌多指公开形象与事实矛盾，比如学历、身份、经历被质疑；带货翻车更集中在推荐产品或服务的实际问题上。两者可能同时出现，但判断重点不同。</p>
+        </details>
+        <details>
+          <summary>在哪里能看到同类事件对比？</summary>
+          <p>事件对比分类入口和深扒解析板块都有同类事件对照，按“声明对比”“带货翻车复盘”“舆论反转时间线”等标签整理，点标签即可查看。</p>
+        </details>
+      </section>
+
+      <!-- 板块8 用户评论 -->
+      <section class="section-card" id="comments">
+        <div class="section-head">
+          <h2>网友评论：吃瓜视角</h2>
+          <span class="sub">12 条真实语气讨论</span>
+        </div>
+        <div class="comment-grid">
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>瓜田里的猹</div><p>阿凯那个结算图一出来，基本就没什么好辩的了，等回应。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>晚风收信</div><p>小鹿的时间线做得挺细，但前任那边也有点情绪化，先观望。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>不吃香菜</div><p>道歉声明对比那个板块挺有用，省得一个个翻。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>半岛铁盒</div><p>大晴退款方案看着还行，就看执行快不快。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>一颗卤蛋</div><p>老周数码改声明这操作有点迷，越改越说不清。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>蓝色毛衣</div><p>健身教练那个学历质疑，品牌撤海报比声明还快。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>雨天不带伞</div><p>租房帖反转看得我有点懵，合同和维修记录都放出来了。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>陈皮糖</div><p>猫咖那个监控时间对不上，还是等平台核实吧。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>小岛来信</div><p>盗图致歉算处理得快的，至少承认了。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>深夜豆浆</div><p>这里整理得比较全，但有些条目还可以再补后续。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>一颗小行星</div><p>吃瓜归吃瓜，别急着站队，让子弹飞一会。</p></div>
+          <div class="comment-item"><div class="comment-user"><span class="avatar"></span>纸飞机</div><p>反转追踪的时间线做得清楚，适合我这种后知后觉的。</p></div>
+        </div>
+      </section>
+
+      <!-- 板块9 相关资讯 -->
+      <section class="section-card" id="news">
+        <div class="section-head">
+          <h2>舆论动态与相关资讯</h2>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2025-10-22</div>
+          <div class="news-body"><h4>平台上线争议内容核实标识</h4><p>部分热点事件页面开始显示“核实中”标签，提醒用户区分传言与已确认信息。</p></div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2025-10-20</div>
+          <div class="news-body"><h4>带货翻车退款流程被集中讨论</h4><p>多个博主公布退款方案后，执行时间和客服响应成为评论区新焦点。</p></div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2025-10-18</div>
+          <div class="news-body"><h4>“声明对比”类内容阅读量上升</h4><p>读者更倾向把同类事件的道歉声明放在一起看，关注赔偿和整改细节。</p></div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2025-10-15</div>
+          <div class="news-body"><h4>品牌方处理合作争议节奏加快</h4><p>近期多起事件中，品牌方从“观望”转向快速下架或暂停合作。</p></div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2025-10-12</div>
+          <div class="news-body"><h4>反转追踪时间线工具受关注</h4><p>读者在讨论区建议把多方回应按时间排列，减少信息碎片化。</p></div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2025-10-09</div>
+          <div class="news-body"><h4>“人设崩塌”类事件出现新类型</h4><p>除了学历和身份，过往合作记录和公开言论被翻出的比例增加。</p></div>
+        </div>
+      </section>
+
+      <!-- 板块10 相关推荐 -->
+      <section class="section-card" id="rec">
+        <div class="section-head">
+          <h2>相关内容推荐标签</h2>
+        </div>
+        <div class="rec-list">
+          <a href="/#hot">网红翻车合集</a>
+          <a href="/#updates">打脸反转追踪</a>
+          <a href="/#deep">人设崩塌现场</a>
+          <a href="/#hot">道歉声明对比</a>
+          <a href="/#deep">带货翻车复盘</a>
+          <a href="/#updates">舆论反转时间线</a>
+          <a href="/#news">品牌解约动态</a>
+          <a href="/#faq">吃瓜必看问答</a>
+        </div>
+      </section>
+
+      <!-- 板块11 趋势观察 -->
+      <section class="section-card" id="trend">
+        <div class="section-head">
+          <h2>趋势观察：争议事件传播节奏</h2>
+        </div>
+        <div class="deep-text">
+          <p>近期争议事件的传播节奏明显加快。从爆料出现到当事人回应，平均间隔缩短到 6 小时以内；品牌方动作也从“观望数天”变成“当天撤海报”。这让反转追踪的时间线更密，也要求读者先看清节点再下判断。</p>
+          <p>另一个变化是“对比阅读”增多。单篇爆料很难覆盖全貌，读者更习惯把道歉声明、赔偿方案和后续回应放在一起看。每日黑料大乱斗把事件对比做成分类入口，正是为了减少来回翻找的成本。</p>
+          <p>需要留意的是，传播快不等于事实清楚。聊天记录截图、后台结算单、监控片段都需要核对来源和时间。吃瓜可以快，判断不妨慢一点。</p>
+        </div>
+      </section>
+
+      <div class="no-results" id="noResults">没有找到匹配内容，换个关键词试试。</div>
+    </main>
+
+    <!-- 右栏 -->
+    <aside class="right-sidebar" aria-label="辅助阅读">
+      <div class="side-block">
+        <div class="side-title">页内目录</div>
+        <nav class="toc-list" aria-label="页内目录">
+          <a href="/#intro">内容简介</a>
+          <a href="/#hot">今日翻车合集</a>
+          <a href="/#updates">反转追踪更新</a>
+          <a href="/#cats">事件对比分类</a>
+          <a href="/#deep">深扒解析</a>
+          <a href="/#guide">吃瓜指南</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#comments">网友评论</a>
+          <a href="/#news">舆论动态</a>
+          <a href="/#rec">推荐标签</a>
+        </nav>
+      </div>
+      <div class="side-block">
+        <div class="side-title">热门条目</div>
+        <div class="hot-item"><span class="hot-rank">1</span><span>阿凯探店收钱刷好评</span></div>
+        <div class="hot-item"><span class="hot-rank">2</span><span>小鹿情感时间线反转</span></div>
+        <div class="hot-item"><span class="hot-rank">3</span><span>带货道歉声明对比</span></div>
+        <div class="hot-item"><span class="hot-rank">4</span><span>健身教练学历质疑</span></div>
+        <div class="hot-item"><span class="hot-rank">5</span><span>租房避雷帖反转</span></div>
+        <div class="hot-item"><span class="hot-rank">6</span><span>猫咖传言核实中</span></div>
+      </div>
+      <div class="side-block">
+        <div class="side-title">延伸阅读</div>
+        <nav class="toc-list">
+          <a href="/#deep">怎么判断聊天记录真假</a>
+          <a href="/#deep">反转时间线怎么排</a>
+          <a href="/#deep">道歉声明对比三要素</a>
+          <a href="/#news">品牌解约动作观察</a>
+          <a href="/#faq">吃瓜常见问题</a>
+        </nav>
+      </div>
+    </aside>
+  </div>
+
+  <!-- 页尾 -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="brand-text">每日黑料大乱斗</span>
+          <p>争议事件、网红翻车、舆论反转的合集整理站。按类型看翻车现场、时间线对比和道歉声明差异。</p>
+        </div>
+        <div class="footer-col">
+          <h5>内容频道</h5>
+          <a href="/#hot">翻车合集</a>
+          <a href="/#updates">反转追踪</a>
+          <a href="/#cats">事件对比</a>
+          <a href="/#deep">深扒解析</a>
+        </div>
+        <div class="footer-col">
+          <h5>互动</h5>
+          <a href="/#comments">网友评论</a>
+          <a href="/#faq">常见问答</a>
+          <a href="/#guide">吃瓜指南</a>
+          <a href="/#news">舆论动态</a>
+        </div>
+        <div class="footer-col">
+          <h5>推荐标签</h5>
+          <a href="/#hot">网红翻车合集</a>
+          <a href="/#updates">打脸反转追踪</a>
+          <a href="/#deep">人设崩塌现场</a>
+          <a href="/#rec">道歉声明对比</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 每日黑料大乱斗 · 内容整理示例</span>
+        <span>部分内容为示例数据，仅用于展示页面结构</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      // 搜索过滤：过滤热门卡片与更新列表，给出无结果反馈
+      const searchInput = document.getElementById('siteSearch');
+      const searchBtn = document.getElementById('searchBtn');
+      const hotGrid = document.getElementById('hotCardGrid');
+      const updateList = document.getElementById('updateList');
+      const noResults = document.getElementById('noResults');
+      const feedback = document.getElementById('searchFeedback');
+
+      function normalize(str) {
+        return (str || '').toLowerCase().trim();
+      }
+
+      function performSearch() {
+        const q = normalize(searchInput.value);
+        let visibleCards = 0;
+        let visibleUpdates = 0;
+
+        if (!q) {
+          // 清空搜索，显示全部
+          document.querySelectorAll('.content-card').forEach(c => c.style.display = '');
+          document.querySelectorAll('#updateList li').forEach(li => li.style.display = '');
+          noResults.style.display = 'none';
+          feedback.classList.remove('show');
+          return;
+        }
+
+        // 过滤卡片
+        if (hotGrid) {
+          const cards = hotGrid.querySelectorAll('.content-card');
+          cards.forEach(card => {
+            const text = normalize(card.textContent);
+            const match = text.includes(q);
+            card.style.display = match ? '' : 'none';
+            if (match) visibleCards++;
+          });
+        }
+
+        // 过滤更新列表
+        if (updateList) {
+          const items = updateList.querySelectorAll('li');
+          items.forEach(li => {
+            const text = normalize(li.textContent);
+            const match = text.includes(q);
+            li.style.display = match ? '' : 'none';
+            if (match) visibleUpdates++;
+          });
+        }
+
+        const totalVisible = visibleCards + visibleUpdates;
+        if (totalVisible === 0) {
+          noResults.style.display = 'block';
+          feedback.classList.add('show');
+          feedback.textContent = '没有找到匹配内容，换个关键词试试。';
+        } else {
+          noResults.style.display = 'none';
+          feedback.classList.remove('show');
+        }
+      }
+
+      if (searchBtn) {
+        searchBtn.addEventListener('click', performSearch);
+      }
+      if (searchInput) {
+        searchInput.addEventListener('input', performSearch);
+        searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            performSearch();
+          }
+        });
+      }
+
+      // 可选的点击搜索框外关闭反馈
+      document.addEventListener('click', function(e) {
+        if (feedback && searchInput && !searchInput.contains(e.target) && !searchBtn.contains(e.target)) {
+          // 不自动隐藏，保留反馈直到下次输入
+        }
+      });
+    })();
+  </script>
+</body>
+        </html>
